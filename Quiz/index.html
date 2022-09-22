@@ -16,15 +16,25 @@
         </div>
         <h3 class="timer">Time remainging is: </h3>
     </header>
-    <section>
-        <h1></h1>
-        <form>
-            <input type="radio" name="choice" value="">
-            <input type="radio" name="choice" value="">
-            <input type="radio" name="choice" value="">
-            <input type="radio" name="choice" value="">
-        </form>
-        <botton class="button">Submit your answer!</botton>
+    <hr />
+    <section class="intro">
+        <p class="welcome">Welcome to this quick quiz game designed to test your working knowledge of HTML, CSS, and JavaScript. Try to answer the questions correctly as quickly as you can in order to get the best score possible. Good luck!</p>
+    </section>
+    <div class="button-start">
+        <button>
+            <botton id="start">Start Game!</botton>
+        </button>
+    </div>
+    <section class="questions">
+        <h2 id="question"></h2>
+        <button id="answer-one"></button>
+        <button id="answer-two"></button>
+        <button id="answer-three"></button>
+        <button id="answer-four"></button>
+    </section>
+    <section class="highscore">
+        <h1 id="highscore-title"></h1>
+        <ul id="highscore-list"></ul>
     </section>
 </body>
 </html>

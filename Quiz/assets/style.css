@@ -1,19 +1,59 @@
 .body {
-    
+    background-color: rgb(159, 55, 223);
+    font-family: sans-serif;
+}
+
+.intro {
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 20px;
+    padding-bottom: 3px;
 }
-
-.timer {}
-
-.title {
-    background: red;
-}
-
 .high-score {
-    
+    outline-color: black; border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 20px;
+    width: 180px;
+    height: 20px;
+    color: white;
+    text-shadow: 3px 1px 1px rgb(84 79 79);
+}
+
+#quiz-title {
+    outline-color: black; border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 20px;
+    width: 200px;
+    height: 30px;
+    color: white;
+    text-shadow: 3px 1px 1px rgb(84 79 79);
+}
+
+.timer {
+    outline-color: black; border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 20px;
+    width: 200px;
+    height: 20px;
+    color: white;
+    text-shadow: 3px 1px 1px rgb(84 79 79);
+}
+
+.welcome {
+    display: block;
+    text-align: center;
+    max-width: 380px;
+    border: 2px solid;
+}
+
+.button-start {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }

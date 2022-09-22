@@ -26,7 +26,7 @@ const submitButton = document.getElementById('submit');
 let score = 0;
 let highscore = localStorage.getItem("highscore");
 
-generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+generateQuiz();
 
 function startTimer(duration, display) {
     let timer = duration, minutes, seconds;
@@ -46,19 +46,8 @@ function showQuestions(questions, quizContainer) {
     for(var i = 0; i < question.length; i++){
         answers=[];
         for(letter in questions[i].answers){
-            answers.push(
-                '<label>'
-                    + '<input type="radio" name="question' + i +" value="'+letter+'">'
-                    + letter + ': '
-                    + questions[i].answers[letter] + 
-                '</label>'
-                );
+            answers.push();
             }
-    output.push(
-        '<div class="question">' + questions[i].question + '</div>'
-        + '<div class="answers">' + answers.join('') + '</div>'
-        );
-    }
     quizContainer.innerHTML = output.join('');
 }
 
